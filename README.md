@@ -11,9 +11,9 @@ Use the jar by copying it over `input-cache/publisher.jar` in the IG and running
    export JAVA_TOOL_OPTIONS="-Xms6g -Xmx12g -Dfile.encoding=UTF-8"
    java -jar input-cache/publisher.jar -ig . -rapido -watch
    ```
-3. The first run is a full build. After that, every time you save a file in the IG, the publisher rebuilds only what changed. Don't run `_genonce.sh` or start a second watcher in the same folder.
-4. A rebuild is done when `output/qa.json` is rewritten. The publisher deletes the file while it rebuilds.
-5. Stop the watcher with Ctrl+C.
+3. The first run is a full build. After that, the publisher keeps running and rebuilds only what changed every time you save a file in the IG. You don't need to run it again, or run `_genonce.sh`.
+4. When it picks up a change, it prints `=== File Changes Detected ===`. When the rebuild is done, it prints `Finished @ <time>` followed by `Watching for changes`. Refresh the page in your browser at that point.
+5. Stop the publisher with Ctrl+C.
 
 ## publisher-3.0.2-SNAPSHOT-rapido.jar
 
