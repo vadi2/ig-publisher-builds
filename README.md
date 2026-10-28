@@ -4,7 +4,7 @@ Use the jar by copying it over `input-cache/publisher.jar` in the IG and running
 
 ## publisher-3.0.2-SNAPSHOT-rapido.jar
 
-IG Publisher 3.0.1 (the release plus the 3.0.2-SNAPSHOT version bump, 4ba5b0ae) built against core 7.0.2, with the vadi2/fhir-ig-publisher perf2 stack (perf2/all2, 7839d306): faster `-rapido` differential builds, warm `-watch` rebuilds, page-only rebuilds when only pages change, Jekyll and watch dependency fixes, and non-ASCII page names, with the fixes for Rapido and watch mode on Windows. The input-cache workstream (ws7) isn't included.
+IG Publisher 3.0.1 (the release plus the 3.0.2-SNAPSHOT version bump, 4ba5b0ae) built against core 7.0.2, with the vadi2/fhir-ig-publisher perf2 stack (perf2/all2, c19a2b47): faster `-rapido` differential builds, warm `-watch` rebuilds, page-only rebuilds when only pages change, Jekyll and watch dependency fixes, and non-ASCII page names, with the fixes for Rapido and watch mode on Windows, and watch mode failing on a temp folder it can't make. The input-cache workstream (ws7) isn't included.
 
 Run it with `-rapido` for differential builds, and add `-watch` to rebuild on every change:
 
@@ -12,7 +12,7 @@ Run it with `-rapido` for differential builds, and add `-watch` to rebuild on ev
 java -jar publisher.jar -ig . -rapido -watch
 ```
 
-sha256: `14de188bd66cc86bdb939837d11b9cd081d2c1e981ab91c4b2170d87a5cd9f84`
+sha256: `838aa92226c9ff8eefd1ebe3153ec5053a7a5b28544c419fb2ea86676d1839b6`
 
 ## publisher-3.0.0-optimised.jar
 
