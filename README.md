@@ -11,8 +11,6 @@ Use the jar by copying it over `input-cache/publisher.jar` in the IG and running
    export JAVA_TOOL_OPTIONS="-Xms6g -Xmx12g -Dfile.encoding=UTF-8"
    java -jar input-cache/publisher.jar -ig . -rapido -watch
    ```
-
-   If you're offline, add `-tx n/a`, as `_genonce.sh` does when it can't reach tx.fhir.org.
 3. The first run is a full build. After that, every time you save a file in the IG, the publisher rebuilds only what changed. Don't run `_genonce.sh` or start a second watcher in the same folder.
 4. A rebuild is done when `output/qa.json` is rewritten. The publisher deletes the file while it rebuilds.
 5. Stop the watcher with Ctrl+C.
