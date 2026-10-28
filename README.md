@@ -2,7 +2,7 @@
 
 Use the jar by copying it over `input-cache/publisher.jar` in the IG and running `_genonce.sh`. Don't run `_updatePublisher`, which replaces it with the official jar.
 
-## Switching from `_genonce.sh` to rapido watch
+## Experimental faster builds
 
 1. Copy the rapido jar over `input-cache/publisher.jar`.
 2. Instead of running `./_genonce.sh`, start the publisher from the IG folder and leave it running:
