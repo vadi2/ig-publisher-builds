@@ -17,7 +17,7 @@ Use the jar by copying it over `input-cache/publisher.jar` in the IG and running
 
 ## publisher-3.0.2-SNAPSHOT-rapido.jar
 
-IG Publisher 3.0.1 (the release plus the 3.0.2-SNAPSHOT version bump, 4ba5b0ae) built against core 7.0.2, with the vadi2/fhir-ig-publisher perf2 stack (perf2/all2, a8f5509a): faster `-rapido` differential builds, warm `-watch` rebuilds, page-only rebuilds when only pages change, Jekyll and watch dependency fixes, and non-ASCII page names, with the fixes for Rapido and watch mode on Windows, watch mode failing on a temp folder it can't make, and page-only rebuilds in translated IGs. The input-cache workstream (ws7) isn't included.
+IG Publisher 3.0.1 (the release plus the 3.0.2-SNAPSHOT version bump, 4ba5b0ae) built against core 7.0.2, with the vadi2/fhir-ig-publisher perf2 stack (perf2/all2, ea4b66ea): faster `-rapido` differential builds, warm `-watch` rebuilds, page-only rebuilds when only pages change, Jekyll and watch dependency fixes, and non-ASCII page names, with the fixes for Rapido and watch mode on Windows, watch mode failing on a temp folder it can't make, page-only rebuilds in translated IGs, resources with more than one name or version (such as Device or Patient) stopping Rapido, and watch mode exiting on content it can't handle instead of reporting the error and watching on. The input-cache workstream (ws7) isn't included.
 
 Run it with `-rapido` for differential builds, and add `-watch` to rebuild on every change:
 
@@ -25,7 +25,7 @@ Run it with `-rapido` for differential builds, and add `-watch` to rebuild on ev
 java -jar publisher.jar -ig . -rapido -watch
 ```
 
-sha256: `c9b25081012d363a9e1932804ddc0a7fbdc741997a442ee145d518c3ea7ade26`
+sha256: `0ca20dc18582a052950eed8f9c9c3e4dd763c923dd66b6e1957f054e2c098009`
 
 ## publisher-3.0.0-optimised.jar
 
